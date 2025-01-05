@@ -1,0 +1,70 @@
+/* nastaveni tela stranky*/
+h1 {
+  color: red;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../img/program.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(121, 109, 109, 0.7), rgba(224, 217, 217, 0.7)), url("../img/program.jpg");
+}
+/* nastaveni zahlavi*/
+header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 0.8;
+  width: 1200px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+header h1 {
+  font-size: 3em;
+}
+header p {
+  font-size: 2em;
+}
+/* nastaveni hlavni casti */
+main {
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
+  margin: 50px auto;
+  background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  border-radius: 10px;
+}
+
+/* nastaveni flexboxu */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container div{
+  background: linear-gradient(to top, rgba(255, 0, 0, 1), rgb(255, 208, 0, 1)); 
+  padding: 20px;
+  margin: 20px;
+  flex: 25%;
+  border-radius: 4px;
+  
+  
+}
+
+/* responsive design */
+@media screen and (max-width: 1200px) {
+  main {
+    width: 90%;
+  }
+
+
+.flex-container{
+  flex-direction: column;
+}
+}
+h2 {
+  text-align: center;
+  padding-top: 35px;
+}
